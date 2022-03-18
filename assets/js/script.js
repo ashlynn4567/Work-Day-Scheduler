@@ -13,8 +13,6 @@ setInterval(function() {
     $(".time-block").each(function (index, el) {
         colorTimeBlocks(el)
     });
-
-    console.log("time updated");
 }, 1000 * 60);
 
 
@@ -28,7 +26,6 @@ var displayTimeBlocks = function() {
         var timeBlockChild = $(`<div id='${timeBlockId}' class='row time-block'></div>`)
         // convert military time to display variable
         convertedTime = moment(timeBlockArray[i], "H").format("h A");
-        console.log(convertedTime);
         
         // create hour div, textarea, and button elements
         var timeBlockHour = $(`<div class='hour col-md-1'>${convertedTime}</div>`);
