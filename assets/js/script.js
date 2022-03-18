@@ -1,14 +1,25 @@
-// using moment.js to display current time and date
+// array of possible time blocks
+timeBlockArray = ["9", "10", "11", "12", "13", "14", "15", "16", "17"];
+
+// when page loads
 setInterval(function() {
-    // display the current day
+    // display the current day at top of page
     $("#currentDay").text(moment().format("dddd, MMMM Do YYYY LTS"));
 }, 0);
 
 
+// checks every minute to update timeblock color
+setInterval(function() {
+    $(".time-block").each(function (index, el) {
+        colorTimeBlocks(el)
+    });
+
+    console.log("time updated");
+}, 1000 * 60);
+
+
 // displaying the time blocks
 var displayTimeBlocks = function() {
-    timeBlockArray = ["9", "10", "11", "12", "13", "14", "15", "16", "17"];
-    
     // for each time block 
     for (i = 0; i < timeBlockArray.length; i++) {
         var timeBlockId = timeBlockArray[i];
@@ -71,25 +82,30 @@ var colorTimeBlocks = function(timeLabel, timeBG) {
 };
 
 
+// save input to local storage on button click
+var saveInput = function() {
+    // collect user input and record which timeblock it belongs to
+    var userInput = $(this).siblings(".description").val();
+    var timeBlockNumber = $(this).parent().attr("id");
+
+    // save to local storage
+    localStorage.setItem(timeBlockNumber, userInput);
+};
 
 
-// when page loads
-    // search localstorage for key-value pairs
+// when page loads search localstorage for key-value pairs
+var searchStorage = function() {
+    for (i = 0; i < timeBlockArray.length; i++) {
+        // search key value pairs and retrieve matching values
+        userText = localStorage.getItem(timeBlockArray[i]);
 
-    // for each pair
-        // parse into an array of key value pairs
-
-        // find the corresponding HTML timeblock div
-
-        // fill that timeblock with the associated value
-
-    // when the user enters input and hits save
-        // find which timeblock was edited
-
-        // gather the input and store data as key value pair
+        // find the corresponding timeblock and fill it with the associated value
+        $(`#${timeBlockArray[i]} .description`).val(userText);
+    };
+};
 
 
-
-
-// call all display functions
+// function calls and event listeners
 displayTimeBlocks();
+searchStorage();
+$(".saveBtn").on("click", saveInput);
