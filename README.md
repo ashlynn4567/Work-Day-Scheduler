@@ -2,40 +2,32 @@
 
 ### Never miss another meeting.
 
-This is my fifth challenge assignment for the University of Oregon Coding Bootcamp 2022. The challenge is to create an application using third-party APIs, like Moment.js and jQuery, that allows a user to navigate an edit a daily planner.
+This application allows a user to load the page and view their local time of day dynamically change on their page. Below, there are task bars that allow users to input and save text as "tasks", which are then saved to their local storage. Because of this, the tasks remain even after refreshing the page. 
 
-[lorem ipsum]
+With this project, I could have hard-coded each task bar. However, I like to challenge myself by coding with progression in mind. For example in this project, I used a for loop to loop through an arrays of possible hourly values in order to dynamically generate each task bar. In the future, if I wanted to add a task bar for the hours of 5am through 9am, I would only have to add a value for those hours into my looped array. If I had hard coded this portion, it would have resulted in a lot of repetitive code.
 
 ## Usage and Features
 
-This is how the main page appears to users. The page is responsive, adapting to multiple screen sizes.
+This is how the main page appears to users. The colors of the task bars dynamically change to alert users when deadlines are approaching. If the time has passed, the bar becomes greyed out. If the task bar represents the current hour, the bar becomes red. If the task bar is for a future event, the bar is green. The page updates asynchronously every minute to check the current time to decide if the colors must be updated in color. 
 
 <p align="center">
-<img src=""/>
-<img src="">
+<img src="./assets/images/scheuler-desktop.PNG"/>
 </p>
 
-[lorem ipsum]
+If the user enters text into the input section and presses the save button, the task persists. Since it is saved to the user's local storage, it remains even after returning to the page at a later date. 
 
-<p align="center"><img src=""/></p>
-
-[lorem ipsum]
-
-<p align="center"><img src=""/></p>
-
-[lorem ipsum]
-
-<p align="center"><img src=""/></p>
+<p align="center"><img src="./assets/images/scheduler-gif.GIF"/></p>
 
 ## Deployed Site
 
-Try it for yourself - <a href="">click here to start scheduling!<a>
+Try it for yourself - <a href="https://ashlynn4567.github.io/Challenge5-WorkDayScheduler/">click here to start scheduling!<a>
 
 ## Suggestion Box
 
 In the future, I would like to add the following improvements:
 
-- [lorem ipsum]
+- I would like to add a "clear all" button so that users could clear multiple tasks at once. 
+- I would like to add a way where users could add a tag to the task, then filter their homepage by a certain type of task (i.e. work, home, school, and etc). 
 
 I'm a big believer in always refactoring code to improve it's functionality. If you would like to suggest your own improvements, you can reach me at the following links.
 
