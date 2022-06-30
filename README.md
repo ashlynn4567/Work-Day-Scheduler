@@ -56,7 +56,7 @@ I'm always interested in refactoring code to improve it's functionality. If you 
 
 - <a href="mailto:ashlynn4567@gmail.com">Email</a>
 - <a href="https://github.com/ashlynn4567">GitHub</a>
-- <a href="www.linkedin.com/in/Ashley-Lynn-Smith">LinkedIn</a>
+- <a href="https://www.linkedin.com/in/ashley-lynn-smith/">LinkedIn</a>
 
 ## Credits
 
