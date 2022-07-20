@@ -43,7 +43,10 @@ If the user enters text into the input section and presses the save button, the 
 
 - HTML
 - CSS
+- [Bootstrap](https://getbootstrap.com/)
 - JavaScript
+- [jQuery](https://jquery.com/)
+- [moment.js](https://momentjs.com/)
 
 ## Future Development
 
