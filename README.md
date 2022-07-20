@@ -17,7 +17,7 @@ This application allows users to keep track of tasks in a kanban-style board tha
 
 ## Deployed Site
 
-Follow [this link](https://ashlynn4567.github.io/Work-Day-Scheduler/) to view and use our site!
+Follow [this link](https://ashlynn4567.github.io/Work-Day-Scheduler/) to view and use my site!
 
 ## Features
 
@@ -52,7 +52,7 @@ In the future, I would like to add the following improvements:
 - I would like to add a "clear all" button so that users could clear multiple tasks at once.
 - I would like to add a way where users could add a tag to the task, then filter their homepage by a certain type of task (i.e. work, home, school, and etc).
 
-I'm always interested in refactoring code to improve it's functionality. If you would like to suggest your own improvements, you can reach our development team at the links below.
+I'm always interested in refactoring code to improve it's functionality. If you would like to suggest your own improvements, you can reach me at the links below.
 
 - <a href="mailto:ashlynn4567@gmail.com">Email</a>
 - <a href="https://github.com/ashlynn4567">GitHub</a>
