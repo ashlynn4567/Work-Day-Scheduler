@@ -57,7 +57,7 @@ In the future, I would like to add the following improvements:
 
 I'm always interested in refactoring code to improve it's functionality. If you would like to suggest your own improvements, you can reach me at the links below.
 
-- <a href="mailto:ashlynn4567@gmail.com">Email</a>
+- <a href="mailto:ashleylynnsmith.dev@gmail.com">Email</a>
 - <a href="https://github.com/ashlynn4567">GitHub</a>
 - <a href="https://www.linkedin.com/in/ashley-lynn-smith/">LinkedIn</a>
 
